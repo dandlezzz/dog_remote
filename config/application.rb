@@ -10,6 +10,7 @@ Bundler.require(*Rails.groups)
 
 module DogRemote
   class Application < Rails::Application
+    config.assets.version = '1.0'
     config.middleware.use Rack::Cors do
       allow do
         origins '*'
