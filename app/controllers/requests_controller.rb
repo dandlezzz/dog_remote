@@ -5,6 +5,7 @@ class RequestsController < ApplicationController
 
 	def create
 		Request.create(request_params)
+		flash[:notice] = "He will be fed soon"
 		redirect_to new_request_path
 	end
 

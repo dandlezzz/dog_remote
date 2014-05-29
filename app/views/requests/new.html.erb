@@ -1,6 +1,8 @@
-<h1> Feed the Dog </h1>
 
-<%= form_for @request  do |f| %>
-<%= f.hidden_field :name, value: "FEED" %>
-<%= f.submit %>
-<% end %> 
+<h1> Feed the Dog </h1>
+<div class="container">
+	<%= form_for @request  do |f| %>
+		<%= f.hidden_field :name, value: "FEED" %>
+		<%= f.submit "FEED DOG" , class: "btn btn-success btn-lg" %>
+	<% end %> 
+</div>

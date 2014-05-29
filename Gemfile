@@ -9,6 +9,8 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'jquery-rails'
+gem 'bootstrap-sass'
 
 gem 'i18n', '0.6.9'
 
