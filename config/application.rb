@@ -10,7 +10,7 @@ Bundler.require(*Rails.groups)
 
 module DogRemote
   class Application < Rails::Application
-    config.assets.version = '1.0'
+   
     config.middleware.use Rack::Cors do
       allow do
         origins '*'
@@ -27,7 +27,7 @@ module DogRemote
     # config.time_zone = 'Central Time (US & Canada)'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
   end
 end
