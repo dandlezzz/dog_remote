@@ -14,10 +14,11 @@ class RequestsController < ApplicationController
 		end	
 	end
 
-	def update
+	def show
 		Request.find(params[:id]).update(fufilled: true)
+		@request = Request.find(params[:id])
 		respond_to do |f|
-			f.json{ render json: Request.last}
+			f.json{ render json: @request}
 		end
 	end
 
