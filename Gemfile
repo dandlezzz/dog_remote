@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'rails-i18n'
+gem 'i18n'
 
 group :development do
   gem 'better_errors'
