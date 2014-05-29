@@ -9,8 +9,8 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'rails-i18n'
-gem 'i18n'
+
+gem 'i18n', '~> 0.6.9'
 
 group :development do
   gem 'better_errors'
